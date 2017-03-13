@@ -355,7 +355,7 @@ end;
 
 procedure Tfconsultarstock.Button2Click(Sender: TObject);
 begin
- if MessageDlg('¿Recuperar el producto '+datamodule1.producto.FieldByName('nombre_prod').AsString+'?', mtCustom,
+ if MessageDlg('¿Eliminar el producto? Esta operación no se puede deshacer!', mtCustom,
     [mbYes, mbCancel], 0) = mrYes then
   begin
   self.eliminarProducto;

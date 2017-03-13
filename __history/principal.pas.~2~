@@ -109,7 +109,6 @@ type
     procedure FormCreate(Sender: TObject);
     procedure Cortespendientes1Click(Sender: TObject);
     procedure Acercade1Click(Sender: TObject);
-    procedure Recuperarproductoeliminado1Click(Sender: TObject);
   private
     { Private declarations }
     procedure reporteSaldoTalleres;
@@ -132,8 +131,7 @@ uses productonuevo, datamodule, venta, consultarstock, clientenuevo,
   cargarstockmedia, reporteMedias, reporteAvio, reporteTaller, historialcortes,
   mercaderiaEnTalleres, reporteNinosHombre, reporteNinosMujer,
   cargarstockremeras, reporteSaldoTalleres, reporteDeudaClientes,
-  reporteMercaderiaEnTalleres, ordenPlancha, verCortePendiente, acerca,
-  productoEliminado;
+  reporteMercaderiaEnTalleres, ordenPlancha, verCortePendiente, acerca;
 {$R *.dfm}
 
 procedure TForm1.Acercade1Click(Sender: TObject);
@@ -417,11 +415,6 @@ begin
   datamodule1.QreportePantalonM.Active := false;
   datamodule1.QreportePantalonM.Active := true;
   freportePantalonMujer.QuickRep1.preview;
-end;
-
-procedure TForm1.Recuperarproductoeliminado1Click(Sender: TObject);
-begin
-  recuperarProducto.ShowModal;
 end;
 
 procedure TForm1.Remera1Click(Sender: TObject);

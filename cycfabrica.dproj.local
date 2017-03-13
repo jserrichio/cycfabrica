@@ -93,6 +93,8 @@
     <Transaction>2016/01/12 18:25:44.959.dfm,D:\svn_cyc_rack\sistema\Unit3.dfm=D:\svn_cyc_rack\sistema\acerca.dfm</Transaction>
     <Transaction>2016/01/13 16:00:22.095.pas,D:\svn_cyc_rack\sistema\Unit3.pas=D:\svn_cyc_rack\sistema\reportePagosTaller.pas</Transaction>
     <Transaction>2016/01/13 16:00:22.095.dfm,D:\svn_cyc_rack\sistema\Unit3.dfm=D:\svn_cyc_rack\sistema\reportePagosTaller.dfm</Transaction>
+    <Transaction>2017/03/13 14:32:11.766.pas,C:\Users\Juan\Documents\sistema\Unit3.pas=C:\Users\Juan\Documents\sistema\productoEliminado.pas</Transaction>
+    <Transaction>2017/03/13 14:32:11.766.dfm,C:\Users\Juan\Documents\sistema\Unit3.dfm=C:\Users\Juan\Documents\sistema\productoEliminado.dfm</Transaction>
   </Transactions>
 	<ProjectSortOrder AutoSort="0" SortType="0">
     <File Path="avioNuevo.pas"/>
@@ -199,5 +201,7 @@
     <File Path="acerca.dfm"/>
     <File Path="reportePagosTaller.pas"/>
     <File Path="reportePagosTaller.dfm"/>
+    <File Path="productoEliminado.pas"/>
+    <File Path="productoEliminado.dfm"/>
   </ProjectSortOrder>
 </BorlandProject>

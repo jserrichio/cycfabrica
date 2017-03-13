@@ -201,6 +201,9 @@
 			<DCCReference Include="reportePagosTaller.pas">
 				<Form>FReportePagosTaller</Form>
 			</DCCReference>
+			<DCCReference Include="productoEliminado.pas">
+				<Form>recuperarProducto</Form>
+			</DCCReference>
 			<BuildConfiguration Include="Base">
 				<Key>Base</Key>
 			</BuildConfiguration>

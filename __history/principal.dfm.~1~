@@ -245,10 +245,6 @@ object Form1: TForm1
         Caption = 'Consultar stock producto'
         OnClick = Consultarstock1Click
       end
-      object Recuperarproductoeliminado1: TMenuItem
-        Caption = 'Recuperar producto eliminado'
-        OnClick = Recuperarproductoeliminado1Click
-      end
     end
     object Avios1: TMenuItem
       Caption = 'Avios'

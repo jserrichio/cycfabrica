@@ -53,8 +53,7 @@ uses
   reporteCCTaller in 'reporteCCTaller.pas' {fReporteCCTaller},
   verCortePendiente in 'verCortePendiente.pas' {Corte_pendiente},
   acerca in 'acerca.pas' {acercade},
-  reportePagosTaller in 'reportePagosTaller.pas' {FReportePagosTaller},
-  productoEliminado in 'productoEliminado.pas' {recuperarProducto};
+  reportePagosTaller in 'reportePagosTaller.pas' {FReportePagosTaller};
 
 {$R *.res}
 
@@ -114,6 +113,5 @@ begin
   Application.CreateForm(TCorte_pendiente, Corte_pendiente);
   Application.CreateForm(Tacercade, acercade);
   Application.CreateForm(TFReportePagosTaller, FReportePagosTaller);
-  Application.CreateForm(TrecuperarProducto, recuperarProducto);
   Application.Run;
 end.

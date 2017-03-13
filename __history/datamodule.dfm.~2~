@@ -377,9 +377,6 @@ object DataModule1: TDataModule1
     Top = 640
   end
   object ADOConnection1: TADOConnection
-    ConnectionString = 
-      'Provider=MSDASQL.1;Password=maiser1989;Persist Security Info=Tru' +
-      'e;User ID=root;Data Source=bd local;Initial Catalog=drmorant_cyc'
     LoginPrompt = False
     Provider = 'MSDASQL.1'
     Left = 48

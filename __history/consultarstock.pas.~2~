@@ -146,7 +146,7 @@ begin
     datamodule1.QstockTotal.SQL.Clear;
     datamodule1.QstockTotal.SQL.Add(
       'select * from producto p left join talle_pantalon tp on p.id_prod = tp.id_prod '
-        + 'left join talle_remera tr on p.id_prod = tr.id_prod left join talle_cinturon tc on p.id_prod = tc.id_prod ' + 'where p.num_prod like ' + QuotedStr('%' + LabeledEdit5.Text + '%')+' and p.activo=1');
+        + 'left join talle_remera tr on p.id_prod = tr.id_prod left join talle_cinturon tc on p.id_prod = tc.id_prod ' + 'where p.num_prod like ' + QuotedStr('%' + LabeledEdit5.Text + '%'));
     datamodule1.QstockTotal.Open;
     datamodule1.QstockTotal.Active := true;
   end
@@ -156,7 +156,7 @@ begin
     begin
       datamodule1.QstockRemera.SQL.Clear;
       datamodule1.QstockRemera.SQL.Add(
-        'select * from producto p left join talle_remera tr on p.id_prod = tr.id_prod where p.tipo_prod="remera" and ' + 'p.num_prod like ' + QuotedStr('%' + LabeledEdit5.Text + '%')+' and p.activo=1');
+        'select * from producto p left join talle_remera tr on p.id_prod = tr.id_prod where p.tipo_prod="remera" and ' + 'p.num_prod like ' + QuotedStr('%' + LabeledEdit5.Text + '%'));
       datamodule1.QstockRemera.Open;
       datamodule1.QstockRemera.Active := true;
     end
@@ -166,7 +166,7 @@ begin
       begin
         datamodule1.QstockRemera.SQL.Clear;
         datamodule1.QstockRemera.SQL.Add(
-          'select * from producto p left join talle_pantalon tp on p.id_prod = tp.id_prod where p.tipo_prod="pantalon" and ' + 'p.num_prod like ' + QuotedStr('%' + LabeledEdit5.Text + '%')+' and p.activo=1');
+          'select * from producto p left join talle_pantalon tp on p.id_prod = tp.id_prod where p.tipo_prod="pantalon" and ' + 'p.num_prod like ' + QuotedStr('%' + LabeledEdit5.Text + '%'));
         datamodule1.QstockRemera.Open;
         datamodule1.QstockRemera.Active := true;
       end
@@ -176,7 +176,7 @@ begin
         begin
           datamodule1.QstockRemera.SQL.Clear;
           datamodule1.QstockRemera.SQL.Add(
-            'select * from producto p left join talle_cinturon tc on p.id_prod = tc.id_prod where p.tipo_prod="cinturon" and ' + 'p.num_prod like ' + QuotedStr('%' + LabeledEdit5.Text + '%')+' and p.activo=1');
+            'select * from producto p left join talle_cinturon tc on p.id_prod = tc.id_prod where p.tipo_prod="cinturon" and ' + 'p.num_prod like ' + QuotedStr('%' + LabeledEdit5.Text + '%'));
           datamodule1.QstockRemera.Open;
           datamodule1.QstockRemera.Active := true;
         end
@@ -186,7 +186,7 @@ begin
           begin
             datamodule1.QstockMedia.SQL.Clear;
             datamodule1.QstockMedia.SQL.Add(
-              'select * from producto p left join talle_media tm on p.id_prod = tm.id_prod where p.tipo_prod="media" and ' + 'p.num_prod like ' + QuotedStr('%' + LabeledEdit5.Text + '%')+' and p.activo=1');
+              'select * from producto p left join talle_media tm on p.id_prod = tm.id_prod where p.tipo_prod="media" and ' + 'p.num_prod like ' + QuotedStr('%' + LabeledEdit5.Text + '%'));
             datamodule1.QstockMedia.Open;
             datamodule1.QstockMedia.Active := true;
           end
@@ -196,7 +196,7 @@ begin
             begin
               datamodule1.QstockBolsa.SQL.Clear;
               datamodule1.QstockBolsa.SQL.Add(
-                'select * from producto p left join talle_bolsa tb on p.id_prod = tb.id_prod where p.tipo_prod="bolsa" and ' + 'p.num_prod like ' + QuotedStr('%' + LabeledEdit5.Text + '%')+' and p.activo=1');
+                'select * from producto p left join talle_bolsa tb on p.id_prod = tb.id_prod where p.tipo_prod="bolsa" and ' + 'p.num_prod like ' + QuotedStr('%' + LabeledEdit5.Text + '%'));
               datamodule1.QstockBolsa.Open;
               datamodule1.QstockBolsa.Active := true;
 
@@ -218,7 +218,7 @@ begin
     datamodule1.QstockTotal.SQL.Clear;
     datamodule1.QstockTotal.SQL.Add(
       'select * from producto p left join talle_pantalon tp on p.id_prod = tp.id_prod '
-        + 'left join talle_remera tr on p.id_prod = tr.id_prod left join talle_cinturon tc on p.id_prod = tc.id_prod ' + 'where p.nombre_prod like ' + QuotedStr('%' + LabeledEdit1.Text + '%')+' and p.activo=1');
+        + 'left join talle_remera tr on p.id_prod = tr.id_prod left join talle_cinturon tc on p.id_prod = tc.id_prod ' + 'where p.nombre_prod like ' + QuotedStr('%' + LabeledEdit1.Text + '%'));
     datamodule1.QstockTotal.Open;
     datamodule1.QstockTotal.Active := true;
   end
@@ -228,7 +228,7 @@ begin
     begin
       datamodule1.QstockRemera.SQL.Clear;
       datamodule1.QstockRemera.SQL.Add(
-        'select * from producto p left join talle_remera tr on p.id_prod = tr.id_prod where p.tipo_prod="remera" and ' + 'p.nombre_prod like ' + QuotedStr('%' + LabeledEdit1.Text + '%')+' and p.activo=1');
+        'select * from producto p left join talle_remera tr on p.id_prod = tr.id_prod where p.tipo_prod="remera" and ' + 'p.nombre_prod like ' + QuotedStr('%' + LabeledEdit1.Text + '%'));
       datamodule1.QstockRemera.Open;
       datamodule1.QstockRemera.Active := true;
     end
@@ -238,7 +238,7 @@ begin
       begin
         datamodule1.QstockRemera.SQL.Clear;
         datamodule1.QstockRemera.SQL.Add(
-          'select * from producto p left join talle_pantalon tp on p.id_prod = tp.id_prod where p.tipo_prod="pantalon" and ' + 'p.nombre_prod like ' + QuotedStr('%' + LabeledEdit1.Text + '%')+' and p.activo=1');
+          'select * from producto p left join talle_pantalon tp on p.id_prod = tp.id_prod where p.tipo_prod="pantalon" and ' + 'p.nombre_prod like ' + QuotedStr('%' + LabeledEdit1.Text + '%'));
         datamodule1.QstockRemera.Open;
         datamodule1.QstockRemera.Active := true;
       end
@@ -248,7 +248,7 @@ begin
         begin
           datamodule1.QstockRemera.SQL.Clear;
           datamodule1.QstockRemera.SQL.Add(
-            'select * from producto p left join talle_cinturon tc on p.id_prod = tc.id_prod where p.tipo_prod="cinturon" and ' + 'p.nombre_prod like ' + QuotedStr('%' + LabeledEdit1.Text + '%')+' and p.activo=1');
+            'select * from producto p left join talle_cinturon tc on p.id_prod = tc.id_prod where p.tipo_prod="cinturon" and ' + 'p.nombre_prod like ' + QuotedStr('%' + LabeledEdit1.Text + '%'));
           datamodule1.QstockRemera.Open;
           datamodule1.QstockRemera.Active := true;
         end
@@ -258,7 +258,7 @@ begin
           begin
             datamodule1.QstockMedia.SQL.Clear;
             datamodule1.QstockMedia.SQL.Add(
-              'select * from producto p left join talle_media tm on p.id_prod = tm.id_prod where p.tipo_prod="media" and ' + 'p.nombre_prod like ' + QuotedStr('%' + LabeledEdit1.Text + '%')+' and p.activo=1');
+              'select * from producto p left join talle_media tm on p.id_prod = tm.id_prod where p.tipo_prod="media" and ' + 'p.nombre_prod like ' + QuotedStr('%' + LabeledEdit1.Text + '%'));
             datamodule1.QstockMedia.Open;
             datamodule1.QstockMedia.Active := true;
           end
@@ -268,7 +268,7 @@ begin
             begin
               datamodule1.QstockBolsa.SQL.Clear;
               datamodule1.QstockBolsa.SQL.Add(
-                'select * from producto p left join talle_bolsa tb on p.id_prod = tb.id_prod where p.tipo_prod="bolsa" and ' + 'p.nombre_prod like ' + QuotedStr('%' + LabeledEdit1.Text + '%')+' and p.activo=1');
+                'select * from producto p left join talle_bolsa tb on p.id_prod = tb.id_prod where p.tipo_prod="bolsa" and ' + 'p.nombre_prod like ' + QuotedStr('%' + LabeledEdit1.Text + '%'));
               datamodule1.QstockBolsa.Open;
               datamodule1.QstockBolsa.Active := true;
 
@@ -358,17 +358,81 @@ begin
  if MessageDlg('¿Eliminar el producto? Esta operación no se puede deshacer!', mtCustom,
     [mbYes, mbCancel], 0) = mrYes then
   begin
-  self.eliminarProducto;
-  self.limpiarFormulario;
-  button2.Enabled:=false;
-  end else begin
-    ShowMessage('Operación cancelada');
+
+
+//    self.filtroVentas;
   end;
+  //####
+
+  if GridTotal.Visible then
+  begin
+    // total
+    datamodule1.producto.Locate('id_prod',
+      datamodule1.QstockTotal.FieldByName('id_prod').AsInteger, []);
+  end
+  else
+  begin
+    if GridPantalon.Visible then
+    begin
+      // pantalon
+      datamodule1.producto.Locate('id_prod',
+        datamodule1.Qstockpantalon.FieldByName('id_prod').AsInteger, []);
+    end
+    else
+    begin
+      if GridRemera.Visible then
+      begin
+        // remera
+        datamodule1.producto.Locate('id_prod',
+          datamodule1.QstockRemera.FieldByName('id_prod').AsInteger, []);
+      end
+      else
+      begin
+        if GridCinturon.Visible then
+        begin
+          // cinturon
+          datamodule1.producto.Locate('id_prod',
+            datamodule1.Qstockcinturon.FieldByName('id_prod').AsInteger, []);
+        end
+        else
+        begin
+          if GridMedia.Visible then
+          begin
+            // media
+            datamodule1.producto.Locate('id_prod',
+              datamodule1.QstockMedia.FieldByName('id_prod').AsInteger, []);
+          end
+          else
+          begin
+            if GridBolsa.Visible then
+            begin
+              // bolsa
+              datamodule1.producto.Locate('id_prod',
+                datamodule1.QstockBolsa.FieldByName('id_prod').AsInteger, []);
+            end
+            else
+            begin
+              if GridNinos.Visible then
+              begin
+                // niños
+                datamodule1.producto.Locate('id_prod',
+                  datamodule1.QstockNinos.FieldByName('id_prod').AsInteger,
+                  []);
+              end;
+            end;
+          end;
+        end;
+      end;
+    end;
+  end;
+   self.eliminarProducto;
+   self.activarGrid;
+  //####
+  button2.Enabled:=false;
 end;
 
 procedure tfconsultarstock.eliminarProducto;
 begin
-  self.actualizarPunteroProducto;
   datamodule1.producto.Edit;
   datamodule1.producto.FieldByName('activo').AsInteger:=0;
   DataModule1.producto.Post;
@@ -953,7 +1017,7 @@ begin
   begin
     datamodule1.QstockTotal.SQL.Clear;
     datamodule1.QstockTotal.SQL.Add(
-      'select * from producto p left join talle_pantalon tp on p.id_prod = tp.id_prod ' + 'left join talle_remera tr on p.id_prod = tr.id_prod left join talle_cinturon tc on p.id_prod = tc.id_prod where p.sexo_prod="hombre"'+' and p.activo=1');
+      'select * from producto p left join talle_pantalon tp on p.id_prod = tp.id_prod ' + 'left join talle_remera tr on p.id_prod = tr.id_prod left join talle_cinturon tc on p.id_prod = tc.id_prod where p.sexo_prod="hombre"');
     datamodule1.QstockTotal.Open;
     datamodule1.QstockTotal.Active := true;
   end
@@ -963,7 +1027,7 @@ begin
     begin
       datamodule1.QstockRemera.SQL.Clear;
       datamodule1.QstockRemera.SQL.Add(
-        'select * from producto p left join talle_remera tr on p.id_prod = tr.id_prod where p.tipo_prod="remera" and p.sexo_prod="hombre"'+' and p.activo=1');
+        'select * from producto p left join talle_remera tr on p.id_prod = tr.id_prod where p.tipo_prod="remera" and p.sexo_prod="hombre"');
       datamodule1.QstockRemera.Open;
       datamodule1.QstockRemera.Active := true;
     end
@@ -973,7 +1037,7 @@ begin
       begin
         datamodule1.Qstockpantalon.SQL.Clear;
         datamodule1.Qstockpantalon.SQL.Add(
-          'select * from producto p left join talle_pantalon tp on p.id_prod = tp.id_prod where p.tipo_prod="pantalon" and p.sexo_prod="hombre"'+' and p.activo=1');
+          'select * from producto p left join talle_pantalon tp on p.id_prod = tp.id_prod where p.tipo_prod="pantalon" and p.sexo_prod="hombre"');
         datamodule1.Qstockpantalon.Open;
         datamodule1.Qstockpantalon.Active := true;
       end
@@ -983,7 +1047,7 @@ begin
         begin
           datamodule1.Qstockcinturon.SQL.Clear;
           datamodule1.Qstockcinturon.SQL.Add(
-            'select * from producto p left join talle_cinturon tc on p.id_prod = tc.id_prod where p.tipo_prod="cinturon" and p.sexo_prod="hombre"'+' and p.activo=1');
+            'select * from producto p left join talle_cinturon tc on p.id_prod = tc.id_prod where p.tipo_prod="cinturon" and p.sexo_prod="hombre"');
           datamodule1.Qstockcinturon.Open;
           datamodule1.Qstockcinturon.Active := true;
         end
@@ -993,7 +1057,7 @@ begin
           begin
             datamodule1.QstockMedia.SQL.Clear;
             datamodule1.QstockMedia.SQL.Add(
-              'select * from producto p left join talle_media tm on p.id_prod = tm.id_prod where p.tipo_prod="media" and p.sexo_prod="hombre"'+' and p.activo=1');
+              'select * from producto p left join talle_media tm on p.id_prod = tm.id_prod where p.tipo_prod="media" and p.sexo_prod="hombre"');
             datamodule1.QstockMedia.Open;
             datamodule1.QstockMedia.Active := true;
           end
@@ -1003,7 +1067,7 @@ begin
             begin
               datamodule1.QstockBolsa.SQL.Clear;
               datamodule1.QstockBolsa.SQL.Add(
-                'select * from producto p left join talle_bolsa tb on p.id_prod = tb.id_prod where p.tipo_prod="bolsa" and p.sexo_prod="hombre"'+' and p.activo=1');
+                'select * from producto p left join talle_bolsa tb on p.id_prod = tb.id_prod where p.tipo_prod="bolsa" and p.sexo_prod="hombre"');
               datamodule1.QstockBolsa.Open;
               datamodule1.QstockBolsa.Active := true;
             end;
@@ -1020,7 +1084,7 @@ begin
   begin
     datamodule1.QstockTotal.SQL.Clear;
     datamodule1.QstockTotal.SQL.Add(
-      'select * from producto p left join talle_pantalon tp on p.id_prod = tp.id_prod ' + 'left join talle_remera tr on p.id_prod = tr.id_prod left join talle_cinturon tc on p.id_prod = tc.id_prod where p.sexo_prod="dama"'+' and p.activo=1');
+      'select * from producto p left join talle_pantalon tp on p.id_prod = tp.id_prod ' + 'left join talle_remera tr on p.id_prod = tr.id_prod left join talle_cinturon tc on p.id_prod = tc.id_prod where p.sexo_prod="dama"');
     datamodule1.QstockTotal.Open;
     datamodule1.QstockTotal.Active := true;
   end
@@ -1030,7 +1094,7 @@ begin
     begin
       datamodule1.QstockRemera.SQL.Clear;
       datamodule1.QstockRemera.SQL.Add(
-        'select * from producto p left join talle_remera tr on p.id_prod = tr.id_prod where p.tipo_prod="remera" and p.sexo_prod="dama"'+' and p.activo=1');
+        'select * from producto p left join talle_remera tr on p.id_prod = tr.id_prod where p.tipo_prod="remera" and p.sexo_prod="dama"');
       datamodule1.QstockRemera.Open;
       datamodule1.QstockRemera.Active := true;
     end
@@ -1040,7 +1104,7 @@ begin
       begin
         datamodule1.Qstockpantalon.SQL.Clear;
         datamodule1.Qstockpantalon.SQL.Add(
-          'select * from producto p left join talle_pantalon tp on p.id_prod = tp.id_prod where p.tipo_prod="pantalon" and p.sexo_prod="dama"'+' and p.activo=1');
+          'select * from producto p left join talle_pantalon tp on p.id_prod = tp.id_prod where p.tipo_prod="pantalon" and p.sexo_prod="dama"');
         datamodule1.Qstockpantalon.Open;
         datamodule1.Qstockpantalon.Active := true;
       end
@@ -1050,7 +1114,7 @@ begin
         begin
           datamodule1.Qstockcinturon.SQL.Clear;
           datamodule1.Qstockcinturon.SQL.Add(
-            'select * from producto p left join talle_cinturon tc on p.id_prod = tc.id_prod where p.tipo_prod="cinturon" and p.sexo_prod="dama"'+' and p.activo=1');
+            'select * from producto p left join talle_cinturon tc on p.id_prod = tc.id_prod where p.tipo_prod="cinturon" and p.sexo_prod="dama"');
           datamodule1.Qstockcinturon.Open;
           datamodule1.Qstockcinturon.Active := true;
         end
@@ -1060,7 +1124,7 @@ begin
           begin
             datamodule1.QstockMedia.SQL.Clear;
             datamodule1.QstockMedia.SQL.Add(
-              'select * from producto p left join talle_media tm on p.id_prod = tm.id_prod where p.tipo_prod="media" and p.sexo_prod="dama"'+' and p.activo=1');
+              'select * from producto p left join talle_media tm on p.id_prod = tm.id_prod where p.tipo_prod="media" and p.sexo_prod="dama"');
             datamodule1.QstockMedia.Open;
             datamodule1.QstockMedia.Active := true;
           end
@@ -1070,7 +1134,7 @@ begin
             begin
               datamodule1.QstockBolsa.SQL.Clear;
               datamodule1.QstockBolsa.SQL.Add(
-                'select * from producto p left join talle_bolsa tb on p.id_prod = tb.id_prod where p.tipo_prod="bolsa" and p.sexo_prod="dama"'+' and p.activo=1');
+                'select * from producto p left join talle_bolsa tb on p.id_prod = tb.id_prod where p.tipo_prod="bolsa" and p.sexo_prod="dama"');
               datamodule1.QstockBolsa.Open;
               datamodule1.QstockBolsa.Active := true;
             end;

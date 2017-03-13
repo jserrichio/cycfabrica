@@ -320,13 +320,6 @@ object fconsultarstock: Tfconsultarstock
       Columns = <
         item
           Expanded = False
-          FieldName = 'id_prod'
-          Title.Caption = 'ID'
-          Width = 30
-          Visible = True
-        end
-        item
-          Expanded = False
           FieldName = 'nombre_prod'
           Title.Caption = 'Producto'
           Width = 146

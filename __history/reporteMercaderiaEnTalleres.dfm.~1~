@@ -3,7 +3,7 @@ object fReporteMercaderiaTalleres: TfReporteMercaderiaTalleres
   Top = 0
   AutoSize = True
   Caption = 'fReporteMercaderiaTalleres'
-  ClientHeight = 873
+  ClientHeight = 1054
   ClientWidth = 794
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -446,7 +446,7 @@ object fReporteMercaderiaTalleres: TfReporteMercaderiaTalleres
       object QRLabel3: TQRLabel
         Left = 3
         Top = 106
-        Width = 15
+        Width = 71
         Height = 17
         Frame.Color = clBlack
         Frame.DrawTop = False
@@ -457,12 +457,12 @@ object fReporteMercaderiaTalleres: TfReporteMercaderiaTalleres
           44.979166666666670000
           7.937500000000000000
           280.458333333333300000
-          39.687500000000000000)
+          187.854166666666700000)
         Alignment = taLeftJustify
         AlignToBand = False
         AutoSize = True
         AutoStretch = False
-        Caption = 'N'#186
+        Caption = 'N'#186' de corte'
         Color = clWhite
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
@@ -528,7 +528,7 @@ object fReporteMercaderiaTalleres: TfReporteMercaderiaTalleres
         FontSize = 10
       end
       object QRLabel5: TQRLabel
-        Left = 40
+        Left = 82
         Top = 106
         Width = 40
         Height = 17
@@ -539,7 +539,7 @@ object fReporteMercaderiaTalleres: TfReporteMercaderiaTalleres
         Frame.DrawRight = False
         Size.Values = (
           44.979166666666670000
-          105.833333333333300000
+          216.958333333333300000
           280.458333333333300000
           105.833333333333300000)
         Alignment = taLeftJustify
@@ -547,39 +547,6 @@ object fReporteMercaderiaTalleres: TfReporteMercaderiaTalleres
         AutoSize = True
         AutoStretch = False
         Caption = 'Fecha'
-        Color = clWhite
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -13
-        Font.Name = 'Arial'
-        Font.Style = [fsBold, fsUnderline]
-        ParentFont = False
-        Transparent = False
-        WordWrap = True
-        ExportAs = exptText
-        WrapStyle = BreakOnSpaces
-        FontSize = 10
-      end
-      object QRLabel6: TQRLabel
-        Left = 108
-        Top = 106
-        Width = 36
-        Height = 17
-        Frame.Color = clBlack
-        Frame.DrawTop = False
-        Frame.DrawBottom = False
-        Frame.DrawLeft = False
-        Frame.DrawRight = False
-        Size.Values = (
-          44.979166666666670000
-          285.750000000000000000
-          280.458333333333300000
-          95.250000000000000000)
-        Alignment = taLeftJustify
-        AlignToBand = False
-        AutoSize = True
-        AutoStretch = False
-        Caption = 'N'#176' art'
         Color = clWhite
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
@@ -774,7 +741,7 @@ object fReporteMercaderiaTalleres: TfReporteMercaderiaTalleres
         FontSize = 10
       end
       object QRDBText4: TQRDBText
-        Left = 40
+        Left = 74
         Top = 12
         Width = 32
         Height = 19
@@ -785,7 +752,7 @@ object fReporteMercaderiaTalleres: TfReporteMercaderiaTalleres
         Frame.DrawRight = False
         Size.Values = (
           50.270833333333330000
-          105.833333333333300000
+          195.791666666666700000
           31.750000000000000000
           84.666666666666670000)
         Alignment = taLeftJustify
@@ -795,40 +762,6 @@ object fReporteMercaderiaTalleres: TfReporteMercaderiaTalleres
         Color = clWhite
         DataSet = DataModule1.QMercaderia
         DataField = 'fecha'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -13
-        Font.Name = 'Arial'
-        Font.Style = []
-        ParentFont = False
-        Transparent = False
-        WordWrap = True
-        ExportAs = exptText
-        WrapStyle = BreakOnSpaces
-        FontSize = 10
-      end
-      object QRDBText5: TQRDBText
-        Left = 108
-        Top = 12
-        Width = 58
-        Height = 19
-        Frame.Color = clBlack
-        Frame.DrawTop = False
-        Frame.DrawBottom = False
-        Frame.DrawLeft = False
-        Frame.DrawRight = False
-        Size.Values = (
-          50.270833333333330000
-          285.750000000000000000
-          31.750000000000000000
-          153.458333333333300000)
-        Alignment = taLeftJustify
-        AlignToBand = False
-        AutoSize = True
-        AutoStretch = False
-        Color = clWhite
-        DataSet = DataModule1.QMercaderia
-        DataField = 'num_prod'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -13

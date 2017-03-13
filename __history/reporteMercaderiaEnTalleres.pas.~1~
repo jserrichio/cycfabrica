@@ -26,8 +26,6 @@ type
     QRLabel4: TQRLabel;
     QRLabel5: TQRLabel;
     QRDBText4: TQRDBText;
-    QRLabel6: TQRLabel;
-    QRDBText5: TQRDBText;
   private
     { Private declarations }
   public

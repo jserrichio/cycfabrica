@@ -20,7 +20,7 @@ object acercade: Tacercade
     Top = 56
     Width = 274
     Height = 25
-    Caption = 'Compilado el dia: 13/03/2017'
+    Caption = 'Compilado el dia: 26/07/2016'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -21

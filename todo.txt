@@ -1,0 +1,4 @@
+Agregar talle 16
+Permitir ocultar producto viejo
+Talles de niños en consulta general de stock
+

@@ -195,8 +195,8 @@ begin
   if MessageDlg('¿Desea imprimir el remito de la venta?', mtCustom,
     [mbYes, mbCancel], 0) = mrYes then
   begin
-    fremito.QuickRep1.PrinterSetup;
-    {if MessageDlg('¿Desea imprimir un duplicado del remito?', mtCustom,
+
+    if MessageDlg('¿Desea imprimir un duplicado del remito?', mtCustom,
       [mbYes, mbCancel], 0) = mrYes then
     begin
       fremito.QuickRep1.PrinterSettings.Copies := 2;
@@ -204,7 +204,7 @@ begin
     else
     begin
       fremito.QuickRep1.PrinterSettings.Copies := 1;
-    end;}
+    end;
     fremito.QuickRep1.print;
 
   end;

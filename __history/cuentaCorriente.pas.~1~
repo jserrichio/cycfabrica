@@ -331,8 +331,8 @@ begin
  if MessageDlg('¿Desea imprimir el informe?', mtCustom,
     [mbYes, mbCancel], 0) = mrYes then
   begin
-    freportecctaller.QuickRep1.PrinterSetup;
-    {if MessageDlg('¿Desea imprimir un duplicado del informe?', mtCustom,
+
+    if MessageDlg('¿Desea imprimir un duplicado del informe?', mtCustom,
       [mbYes, mbCancel], 0) = mrYes then
     begin
       fReporteCCTaller.QuickRep1.PrinterSettings.Copies := 2;
@@ -340,7 +340,7 @@ begin
     else
     begin
       fReporteCCTaller.QuickRep1.PrinterSettings.Copies := 1;
-    end;}
+    end;
     fReporteCCTaller.QuickRep1.print;
  end;
  fReporteCCTaller.QuickRep1.Preview;
@@ -353,8 +353,8 @@ begin
  if MessageDlg('¿Desea imprimir el informe?', mtCustom,
     [mbYes, mbCancel], 0) = mrYes then
   begin
-    fReportePagosTaller.QuickRep1.PrinterSetup;
-    {if MessageDlg('¿Desea imprimir un duplicado del informe?', mtCustom,
+
+    if MessageDlg('¿Desea imprimir un duplicado del informe?', mtCustom,
       [mbYes, mbCancel], 0) = mrYes then
     begin
       fReportePagosTaller.QuickRep1.PrinterSettings.Copies := 2;
@@ -362,7 +362,7 @@ begin
     else
     begin
       fReportePagosTaller.QuickRep1.PrinterSettings.Copies := 1;
-    end;}
+    end;
 
     fReportePagosTaller.QuickRep1.print;
  end;

@@ -26,10 +26,6 @@ object fcuentaCorriente: TfcuentaCorriente
     TabOrder = 0
     object TabSheet1: TTabSheet
       Caption = 'Clientes'
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object Panel1: TPanel
         Left = 968
         Top = 3
@@ -221,10 +217,6 @@ object fcuentaCorriente: TfcuentaCorriente
     object TabSheet2: TTabSheet
       Caption = 'Pagos'
       ImageIndex = 1
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object Panel3: TPanel
         Left = 968
         Top = 3
@@ -402,10 +394,6 @@ object fcuentaCorriente: TfcuentaCorriente
     object TabSheet3: TTabSheet
       Caption = 'Talleres'
       ImageIndex = 2
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object Panel5: TPanel
         Left = 968
         Top = 3
@@ -424,9 +412,8 @@ object fcuentaCorriente: TfcuentaCorriente
             Top = 40
             Width = 201
             Height = 21
-            EditLabel.Width = 67
+            EditLabel.Width = 3
             EditLabel.Height = 13
-            EditLabel.Caption = 'LabeledEdit13'
             TabOrder = 0
           end
         end
@@ -643,10 +630,6 @@ object fcuentaCorriente: TfcuentaCorriente
     object TabSheet4: TTabSheet
       Caption = 'Cobros'
       ImageIndex = 3
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object Panel7: TPanel
         Left = 7
         Top = 3
@@ -716,9 +699,8 @@ object fcuentaCorriente: TfcuentaCorriente
             Top = 40
             Width = 201
             Height = 21
-            EditLabel.Width = 61
+            EditLabel.Width = 3
             EditLabel.Height = 13
-            EditLabel.Caption = 'LabeledEdit7'
             TabOrder = 0
           end
         end

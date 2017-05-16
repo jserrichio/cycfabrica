@@ -163,8 +163,7 @@ begin
   if MessageDlg('¿Imprimir comprobante de pago', mtCustom, [mbYes, mbCancel],
     0) = mrYes then
   begin
-    //fremitopago.QuickRep1.PrinterSettings.Copies := 1;
-    fremitopago.quickrep1.PrinterSetup;
+    fremitopago.QuickRep1.PrinterSettings.Copies := 1;
     fremitopago.QuickRep1.Print;
   end;
   fremitopago.QuickRep1.Preview;
@@ -181,8 +180,7 @@ begin
   if MessageDlg('¿Imprimir comprobante de pago', mtCustom, [mbYes, mbCancel],
     0) = mrYes then
   begin
-    //fremitocobro.QuickRep1.PrinterSettings.Copies := 1;
-    fremitocobro.QuickRep1.PrinterSetup;
+    fremitocobro.QuickRep1.PrinterSettings.Copies := 1;
     fremitocobro.QuickRep1.Print;
   end;
   fremitocobro.QuickRep1.Preview;

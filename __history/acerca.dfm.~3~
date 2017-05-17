@@ -13,7 +13,6 @@ object acercade: Tacercade
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
-  OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
@@ -42,35 +41,9 @@ object acercade: Tacercade
     Font.Style = []
     ParentFont = False
   end
-  object Label3: TLabel
-    Left = 24
-    Top = 145
-    Width = 76
-    Height = 25
-    Caption = 'Versi'#243'n:'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -21
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-  end
-  object Label4: TLabel
-    Left = 156
-    Top = 145
-    Width = 34
-    Height = 25
-    Caption = 'null'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -21
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-  end
   object Button1: TButton
     Left = 120
-    Top = 200
+    Top = 176
     Width = 75
     Height = 25
     Caption = 'Aceptar'
